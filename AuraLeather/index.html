@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Leather · Portfolio Preview</title>
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light only">
+  <meta name="supported-color-schemes" content="light only">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <style>
+    .portfolio-header { text-align:center; font-family:Arial, Helvetica, sans-serif; padding:25px 15px; background-color:#ffffff; border-bottom:1px solid #e2e8f0; }
+    .portfolio-header h2 { margin:0 0 10px 0; color:#2d3748; font-size:22px; }
+    .portfolio-header img { max-width:100%; height:auto; border:1px solid #cbd5e1; border-radius:6px; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1); margin-top:15px; }
+    .toggle-panel { text-align:center; background-color:#f8fafc; padding:20px 15px; border-bottom:2px solid #e2e8f0; }
+    .toggle-panel p { margin:0 0 12px 0; font-family:Arial, sans-serif; color:#4a5568; font-size:15px; }
+    .toggle-btn { padding:12px 28px; background-color:#1a1a1a; color:#ffffff; border:none; border-radius:6px; font-weight:bold; cursor:pointer; font-size:14px; transition:background 0.2s ease; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    .toggle-btn:hover { background-color:#000000; }
+    .toggle-btn.dark-active { background-color:#A75A42; }
+    .toggle-btn.dark-active:hover { background-color:#8c4a35; }
+
+    .ExternalClass { width:100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass td, .ExternalClass div { line-height:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; }
+    img { -ms-interpolation-mode:bicubic; border:0; display:block; }
+    a { text-decoration:none; }
+
+    u + .body a,
+    a[x-apple-data-detectors],
+    .cta-button,
+    .cta-button:link,
+    .cta-button:visited{
+      color:#FFFFFF !important;
+      text-decoration:none !important;
+    }
+
+    .cta-button {
+      background-color:#000000 !important;
+      color:#FFFFFF !important;
+      display:inline-block !important;
+      font-family:Georgia, 'Times New Roman', serif !important;
+      font-size:13px !important;
+      font-weight:normal !important;
+      letter-spacing:1.5px !important;
+      line-height:48px !important;
+      text-align:center !important;
+      text-decoration:none !important;
+      text-transform:uppercase !important;
+      width:240px !important;
+      -webkit-text-size-adjust:none !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table[class="email-container"] { width: 100% !important; }
+      td[class="responsive-padding"] { padding-left: 20px !important; padding-right: 20px !important; }
+      img[class="fluid"] { width: 100% !important; height: auto !important; }
+      img[class="logo"] { width: 100px !important; }
+      h2 { font-size: 26px !important; }
+      .cta-button { width: 90% !important; display: block !important; }
+    }
+  </style>
+</head>
+<body id="email-body" class="body" style="margin:0; padding:0; background-color:#F7EFEA; font-family:Georgia, 'Times New Roman', serif;">
+
+  <!-- PORTFOLIO PROOF PICTURE (optional) -->
+  <!--
+  <div class="portfolio-header">
+    <h2>📸 Email Visual Proof: Light vs. Dark Mode</h2>
+    <img src="PASTE_SCREENSHOT_URL_HERE" alt="Light and Dark Mode Layout Proof View">
+  </div>
+  -->
+
+  <!-- TOGGLE PANEL -->
+  <div class="toggle-panel">
+    <p>⚡ Toggle dark mode simulation on the email below (CSS + table background)</p>
+    <button id="sim-btn" class="toggle-btn" onclick="togglePreview()">
+      🌙 Simulate Email Client Dark Mode
+    </button>
+  </div>
+
+  <!-- MAIN EMAIL WRAPPER -->
+  <div id="email-preview-wrapper" style="background-color:#F7EFEA; padding:0; transition: background 0.3s ease;">
+
+    <div style="display:none; white-space:nowrap; font-size:0; line-height:0;">&nbsp;</div>
+
+    <center style="width:100%;">
+      <table id="bg-table-1" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F7EFEA" style="background-color:#F7EFEA;">
+        <tr>
+          <td id="bg-td-1" align="center" style="padding:0; background-color:#F7EFEA;">
+
+            <table id="main-card" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="email-container" style="width:600px; max-width:600px; background-color:#FFF8F3;">
+
+              <!-- HERO IMAGE -->
+              <tr>
+                <td align="center" style="padding:0;">
+                  <img src="https://www.image2url.com/r2/default/images/1790069983562-acd81812-c711-4ae5-b7b7-c8475505ce4e.png"
+                    alt="Aura Leather Product"
+                    width="600"
+                    class="fluid"
+                    style="width:100%; max-width:600px; height:auto; display:block;">
+                </td>
+              </tr>
+
+              <!-- HEADLINE -->
+              <tr>
+                <td align="center" style="padding:36px 40px 0 40px;">
+                  <p id="email-kicker" style="margin:0; font-size:13px; letter-spacing:3px; text-transform:uppercase; color:#A75A42; font-family:Georgia, serif;">Welcome To</p>
+                  <h2 id="email-heading" style="color:#2d2522; text-align:center; margin:8px 0 30px 0; font-size:38px; line-height:1.3; font-family:Georgia, 'Times New Roman', serif; font-weight:normal;">
+                    Aura Leather
+                  </h2>
+                </td>
+              </tr>
+
+              <!-- INTRO -->
+              <tr>
+                <td style="padding:0 40px 30px 40px; font-size:15px; line-height:1.8; text-align:center;">
+                  <p id="intro-1" style="margin:0 0 16px 0; color:#6B5E5A;">Hi Miracle, welcome in. We're glad you're here.</p>
+                  <p id="intro-2" style="margin:0; color:#6B5E5A;">Here's a little something to get you started.</p>
+                </td>
+              </tr>
+
+              <!-- COUPON -->
+              <tr>
+                <td align="center" style="padding:0 20px 20px 20px;">
+                  <p id="code-label" style="margin:0 0 6px 0; font-size:14px; color:#6B5E5A;">Use code</p>
+                  <p id="email-code" style="margin:0 0 6px 0; font-size:26px; letter-spacing:2px; color:#A75A42; font-style:italic; font-family:Georgia, serif;">WELCOME10</p>
+                  <p id="code-note" style="margin:0; font-size:14px; color:#6B5E5A;">at checkout for 10% off your first order.</p>
+                </td>
+              </tr>
+
+              <!-- CTA -->
+              <tr>
+                <td align="center" style="padding:14px 0 40px 0;">
+                  <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td id="cta-cell" align="center" bgcolor="#000000" style="border:1px solid #000000;">
+                        <!--[if mso]>
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://auraleather.com" style="height:48px;width:240px;v-text-anchor:middle;" arcsize="0%" fillcolor="#000000" stroke="f">
+                        <w:anchorlock/>
+                        <center style="color:#FFFFFF;font-family:Georgia, serif;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;">Claim 10% Off</center>
+                        </v:roundrect>
+                        <![endif]-->
+                        <!--[if !mso]><!-- -->
+                        <a href="https://auraleather.com" class="cta-button">Claim 10% Off</a>
+                        <!--<![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- DIVIDER -->
+              <tr>
+                <td align="center" style="padding:0 40px;">
+                  <table role="presentation" width="60" cellpadding="0" cellspacing="0" border="0">
+                    <tr><td id="divider-1" style="border-top:1px solid #E2D5CE; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- WHY WE STARTED THIS -->
+              <tr>
+                <td style="padding:40px 40px 30px 40px; text-align:center;">
+                  <h3 id="email-subheading-1" style="color:#2d2522; margin:0 0 18px 0; font-size:20px; font-family:Georgia, serif; font-weight:normal;">Why We Started This</h3>
+                  <p id="why-1" style="margin:0 0 14px 0; font-size:14px; line-height:1.8; color:#6B5E5A;">Aura Leather began with a simple belief: what you carry should be made to last, not replaced.</p>
+                  <p id="why-2" style="margin:0; font-size:14px; line-height:1.8; color:#6B5E5A;">We work with full-grain leather and old-world craft, built for everyday use and years of wear.</p>
+                </td>
+              </tr>
+
+              <!-- DIVIDER -->
+              <tr>
+                <td align="center" style="padding:0 40px;">
+                  <table role="presentation" width="60" cellpadding="0" cellspacing="0" border="0">
+                    <tr><td id="divider-2" style="border-top:1px solid #E2D5CE; font-size:1px; line-height:1px;">&nbsp;</td></tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- WHAT TO EXPECT -->
+              <tr>
+                <td style="padding:30px 40px 40px 40px; text-align:center;">
+                  <h3 id="email-subheading-2" style="color:#2d2522; margin:0 0 20px 0; font-size:20px; font-family:Georgia, serif; font-weight:normal;">What to Expect as a Member</h3>
+
+                  <p id="detail-1-title" style="margin:0 0 4px 0; font-size:14px; color:#2d2522; font-weight:bold;">Full-Grain Leather</p>
+                  <p id="detail-1-body" style="margin:0 0 18px 0; font-size:14px; line-height:1.7; color:#6B5E5A;">Sourced for durability, chosen to age well.</p>
+
+                  <p id="detail-2-title" style="margin:0 0 4px 0; font-size:14px; color:#2d2522; font-weight:bold;">A Routine, Not a Rush</p>
+                  <p id="detail-2-body" style="margin:0; font-size:14px; line-height:1.7; color:#6B5E5A;">Small steps, done daily, made simple to keep.</p>
+                </td>
+              </tr>
+
+              <!-- FOOTER -->
+              <tr>
+                <td id="email-footer-cell" style="padding:25px; background-color:#F3E8E6; line-height:1.6;">
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td id="footer-text-cell" align="center" style="font-size:13px; color:#5A4E49; font-family:Arial, Helvetica, sans-serif;">
+                        <p id="footer-p1" style="margin:5px 0; color:#5A4E49;">You're receiving this email because you subscribed to Aura Leather.</p>
+                        <p style="margin:5px 0;"><a id="footer-a1" href="https://auraleather.com" style="color:#5A4E49; text-decoration:none;">https://auraleather.com</a></p>
+                        <p style="margin:5px 0;"><a id="footer-a2" href="mailto:support@auraleather.com" style="color:#5A4E49; text-decoration:none;">support@auraleather.com</a></p>
+                        <p style="margin:5px 0;"><a id="footer-a3" href="https://auraleather.com/unsubscribe" style="color:#5A4E49; text-decoration:none;">Unsubscribe</a></p>
+                        <p id="footer-p2" style="margin:10px 0 0 0; color:#5A4E49;">© 2026 Aura Leather. All rights reserved.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            </table>
+
+          </td>
+        </tr>
+      </table>
+    </center>
+  </div>
+
+  <script>
+    var isLight = true;
+
+    function setColor(id, color) { var el = document.getElementById(id); if (el) el.style.color = color; }
+    function setBg(id, color) { var el = document.getElementById(id); if (el) el.style.backgroundColor = color; }
+    function setBorderTop(id, color) { var el = document.getElementById(id); if (el) el.style.borderTop = '1px solid ' + color; }
+
+    function togglePreview() {
+      var btn = document.getElementById('sim-btn');
+      var body = document.getElementById('email-body');
+      var wrapper = document.getElementById('email-preview-wrapper');
+      var ctaCell = document.getElementById('cta-cell');
+
+      if (isLight) {
+        // ============ SWITCH TO DARK ============
+        body.style.backgroundColor = '#000000';
+        wrapper.style.backgroundColor = '#000000';
+        setBg('bg-table-1', '#000000');
+        setBg('bg-td-1', '#000000');
+        setBg('main-card', '#000000');
+        setBg('email-footer-cell', '#0D0B0A');
+
+        setColor('email-kicker', '#B98B76');
+        setColor('email-heading', '#FFFFFF');
+        setColor('intro-1', '#CFC4BE');
+        setColor('intro-2', '#CFC4BE');
+        setColor('code-label', '#CFC4BE');
+        setColor('email-code', '#FFFFFF');
+        setColor('code-note', '#CFC4BE');
+        setColor('why-1', '#CFC4BE');
+        setColor('why-2', '#CFC4BE');
+        setColor('detail-1-title', '#FFFFFF');
+        setColor('detail-1-body', '#CFC4BE');
+        setColor('detail-2-title', '#FFFFFF');
+        setColor('detail-2-body', '#CFC4BE');
+        setColor('email-subheading-1', '#FFFFFF');
+        setColor('email-subheading-2', '#FFFFFF');
+        setColor('footer-p1', '#8A8078');
+        setColor('footer-p2', '#8A8078');
+        setColor('footer-a1', '#8A8078');
+        setColor('footer-a2', '#8A8078');
+        setColor('footer-a3', '#8A8078');
+
+        setBorderTop('divider-1', '#3A332F');
+        setBorderTop('divider-2', '#3A332F');
+
+        ctaCell.style.backgroundColor = '#000000';
+        ctaCell.style.border = '1px solid #FFFFFF';
+
+        btn.innerText = '☀️ Switch Back to Light Mode';
+        btn.style.backgroundColor = '#1a1a1a';
+        btn.classList.remove('dark-active');
+        isLight = false;
+      } else {
+        // ============ SWITCH BACK TO LIGHT ============
+        body.style.backgroundColor = '#F7EFEA';
+        wrapper.style.backgroundColor = '#F7EFEA';
+        setBg('bg-table-1', '#F7EFEA');
+        setBg('bg-td-1', '#F7EFEA');
+        setBg('main-card', '#FFF8F3');
+        setBg('email-footer-cell', '#F3E8E6');
+
+        setColor('email-kicker', '#A75A42');
+        setColor('email-heading', '#2d2522');
+        setColor('intro-1', '#6B5E5A');
+        setColor('intro-2', '#6B5E5A');
+        setColor('code-label', '#6B5E5A');
+        setColor('email-code', '#A75A42');
+        setColor('code-note', '#6B5E5A');
+        setColor('why-1', '#6B5E5A');
+        setColor('why-2', '#6B5E5A');
+        setColor('detail-1-title', '#2d2522');
+        setColor('detail-1-body', '#6B5E5A');
+        setColor('detail-2-title', '#2d2522');
+        setColor('detail-2-body', '#6B5E5A');
+        setColor('email-subheading-1', '#2d2522');
+        setColor('email-subheading-2', '#2d2522');
+        setColor('footer-p1', '#5A4E49');
+        setColor('footer-p2', '#5A4E49');
+        setColor('footer-a1', '#5A4E49');
+        setColor('footer-a2', '#5A4E49');
+        setColor('footer-a3', '#5A4E49');
+
+        setBorderTop('divider-1', '#E2D5CE');
+        setBorderTop('divider-2', '#E2D5CE');
+
+        ctaCell.style.backgroundColor = '#000000';
+        ctaCell.style.border = '1px solid #000000';
+
+        btn.innerText = '🌙 Simulate Email Client Dark Mode';
+        btn.style.backgroundColor = '#1a1a1a';
+        btn.classList.add('dark-active');
+        isLight = true;
+      }
+    }
+  </script>
+
+</body>
+</html>
