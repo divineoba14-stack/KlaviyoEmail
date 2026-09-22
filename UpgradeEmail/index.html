@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upgrade Your Account</title>
+
+<!-- Apple Mail prevention meta tag -->
+<meta name="x-apple-disable-message-reformatting">
+
+<!-- Gmail dark mode prevention -->
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+
+<!-- IE compatibility (helps Outlook web) -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<style>
+
+/* PORTFOLIO WRAPPER UI (Only visible on browser preview) */
+.portfolio-header {
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif; 
+  padding: 25px 15px; 
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+.portfolio-header h2 {
+  margin: 0 0 10px 0;
+  color: #2d3748;
+  font-size: 22px;
+}
+.portfolio-header img {
+  max-width: 100%; 
+  height: auto; 
+  border: 1px solid #cbd5e1; 
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  margin-top: 15px;
+}
+.toggle-panel {
+  text-align: center; 
+  background-color: #f8fafc; 
+  padding: 20px 15px; 
+  border-bottom: 2px solid #e2e8f0;
+}
+.toggle-panel p {
+  margin: 0 0 12px 0; 
+  font-family: Arial, sans-serif; 
+  color: #4a5568;
+  font-size: 15px;
+}
+.toggle-btn {
+  padding: 12px 28px; 
+  background-color: #6F42C1; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 6px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  font-size: 14px;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.toggle-btn:hover {
+  background-color: #5a32a3;
+}
+.toggle-btn.dark-active {
+  background-color: #1e293b;
+}
+.toggle-btn.dark-active:hover {
+  background-color: #0f172a;
+}
+
+.ExternalClass{
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass td,
+.ExternalClass div{
+  line-height:100%;
+}
+
+table,
+td{
+  mso-table-lspace:0pt;
+  mso-table-rspace:0pt;
+}
+
+img{
+  -ms-interpolation-mode:bicubic;
+  border:0;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+}
+
+u + .body a,
+a[x-apple-data-detectors],
+.cta-button,
+.cta-button:link,
+.cta-button:visited{
+  color:#FFFFFF !important;
+  text-decoration:none !important;
+}
+
+.cta-button{
+  background-color:#6F42C1 !important;
+  border:1px solid #6F42C1 !important;
+  border-radius:8px !important;
+  color:#FFFFFF !important;
+  display:inline-block !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  font-size:16px !important;
+  font-weight:bold !important;
+  line-height:50px !important;
+  text-align:center !important;
+  width:240px !important;
+  -webkit-text-size-adjust:none !important;
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 600px) {
+  
+  table[class="email-container"] {
+    width: 100% !important;
+  }
+  
+  td[class="responsive-padding"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  img[class="fluid"] {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Shrink logo on mobile */
+  img[class="logo"] {
+    width: 100px !important;
+  }
+  
+  /* Reduce heading size on mobile */
+  h2 {
+    font-size: 20px !important;
+  }
+  
+  /* Stack button on mobile */
+  .cta-button {
+    width: 90% !important;
+    display: block !important;
+  }
+}
+
+@media (prefers-color-scheme: dark){
+
+  body{
+    background-color:#1A1A1B !important;
+  }
+
+  table{
+    background-color:#1A1A1B !important;
+  }
+
+  h2{
+    color:#A259FF !important;
+  }
+
+  p,
+  li{
+    color:#E5E5E5 !important;
+  }
+
+  .email-container{
+    background-color:#1A1A1B !important;
+    border:1px solid #2A2A2A !important;
+  }
+
+  a,
+  a:link,
+  a:visited{
+    color:#A259FF !important;
+  }
+
+  .cta-button,
+  .cta-button:link,
+  .cta-button:visited{
+    background-color:#A259FF !important;
+    border-color:#A259FF !important;
+    color:#1A1A1B !important;
+  }
+
+  .footer{
+    background-color:#161616 !important;
+    border-top:1px solid #2A2A2A !important;
+  }
+
+  .divider{
+    border-color:#2A2A2A !important;
+  }
+}
+</style>
+
+</head>
+
+<body class="body" style="margin:0; padding:0; background-color:#F5F7FB; font-family:Arial, Helvetica, sans-serif;">
+
+<!-- ================================================================= -->
+<!-- PORTFOLIO ELEMENT 1: PROOF PICTURE                                -->
+<!-- ================================================================= -->
+<div class="portfolio-header">
+  <h2>📸 Email Visual Proof: Light vs. Dark Mode rendering</h2>
+  <!-- ⬇️ Replace src with your actual screenshot URL (Imgur/ImgBB) -->
+  <img src=" https://files.catbox.moe/xkfwx2.jpg" alt="Light and Dark Mode Layout Proof View">
+</div>
+
+<!-- ================================================================= -->
+<!-- PORTFOLIO ELEMENT 2: LIVE SIMULATION TOGGLE                       -->
+<!-- ================================================================= -->
+<div class="toggle-panel">
+  <p>⚡ Want to see the actual raw CSS and tables invert live right now?</p>
+  <button id="sim-btn" class="toggle-btn" onclick="togglePreview()">
+    🌙 Simulate Email Client Dark Mode
+  </button>
+</div>
+
+<!-- ================================================================= -->
+<!-- MAIN EMAIL WRAPPER (targeted by Javascript simulation)             -->
+<!-- ================================================================= -->
+<div id="email-preview-wrapper" style="background-color:#F5F7FB; padding:0; transition: background 0.3s ease;">
+
+<!-- Yahoo/Outlook.com spacing fix -->
+<div style="display:none; white-space:nowrap; font-size:0; line-height:0;">&nbsp;</div>
+
+<center style="width:100%; background-color:#F5F7FB;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" id="bg-table-1" style="background-color:#F5F7FB;">
+  <tr>
+    <td id="bg-td-1" align="center" style="padding:30px 20px; background-color:#F5F7FB;">
+
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+      id="main-card"
+      class="email-container"
+      style="width:600px; max-width:600px; background-color:#FFFFFF; border-radius:12px; overflow:hidden; border:1px solid #E5E7EB;">
+
+        <!-- LOGO -->
+        <tr>
+          <td align="center" style="padding:35px 20px 25px 20px;">
+            <img src="https://files.catbox.moe/pdg3gj.png"
+            alt="Workflow Icon"
+            width="120"
+            class="logo"
+            style="width:120px; max-width:120px; height:auto; display:block;">
+          </td>
+        </tr>
+
+        <!-- DIVIDER -->
+        <tr>
+          <td style="padding:0 40px;">
+            <hr class="divider" style="border:none; border-top:1px solid #E5E7EB;">
+          </td>
+        </tr>
+
+        <!-- CONTENT -->
+        <tr>
+          <td class="responsive-padding" style="padding:40px 45px 30px 45px; font-size:16px; line-height:1.6; color:#1A1A1A;">
+
+            <h2 id="email-heading" style="text-align:center; margin:0 0 8px 0; font-size:24px; font-weight:bold; color:#6F42C1;">
+              Unlock Advanced Features & Scale 🚀
+            </h2>
+
+            <p style="text-align:center; color:#6F42C1; margin:0 0 30px 0; font-size:13px; text-transform:uppercase; letter-spacing:2px;">
+              Upgrade Your Experience
+            </p>
+
+            <p class="email-text">Hi Tony,</p>
+
+            <p class="email-text">Your free plan is doing its job — but it's also showing you exactly where the ceiling is. The features built for serious output, the ones that cut decision time in half and remove the manual work slowing your team down, are one step away.</p>
+
+            <p class="email-text">Every week you stay on the free plan is a week your competitors with better systems are pulling further ahead. Not because they work harder — because they stopped dropping balls and started hitting targets.</p>
+
+            <p class="email-text">Upgrading removes that gap completely. Your team doesn't need to work harder. They need better tools.</p>
+
+            <ul>
+              <li class="email-text">Live dashboards 📊 — see every metric that matters, updated in real time</li>
+              <li class="email-text">Smart automation ⚡ — eliminate the repetitive tasks eating your team's hours</li>
+              <li class="email-text">Priority support ✨ — get help faster when it matters most</li>
+              <li class="email-text">Advanced analytics 🚀 — know exactly what's working and double down on it</li>
+            </ul>
+
+            <p class="email-text">This is the same plan high-performing teams use when "same output with half the chaos" stops being optional — and starts being the only way to compete.</p>
+
+           </td>
+        </tr>
+
+        <!-- PRODUCT IMAGE -->
+        <tr>
+          <td align="center" style="padding:10px 20px 20px 20px;">
+            <img src="https://files.catbox.moe/q3kc3h.jpg"
+            alt="Upgrade illustration"
+            width="550"
+            class="fluid"
+            style="width:100%; max-width:550px; border-radius:8px; display:block;">
+           </td>
+        </tr>
+
+        <!-- CTA BUTTON -->
+        <tr>
+          <td align="center">
+            <table role="presentation">
+              <tr>
+                <td bgcolor="#6F42C1" style="border-radius:8px;">
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml"
+                  href="https://emailflow.com/upgrade"
+                  style="height:50px;width:240px;v-text-anchor:middle;"
+                  arcsize="8%" stroke="f" fillcolor="#6F42C1">
+                  <w:anchorlock/>
+                  <center style="color:#FFFFFF;font-family:Arial;font-size:16px;font-weight:bold;">
+                  Upgrade My Plan Now 🔋
+                  </center>
+                  </v:roundrect>
+                  <![endif]-->
+                  <!--[if !mso]><!-- -->
+                  <a href="https://emailflow.com/upgrade" class="cta-button">
+                    Upgrade My Plan Now 🔋
+                  </a>
+                  <!--<![endif]-->
+                 </td>
+               </tr>
+             </table>
+           </td>
+        </tr>
+
+        <!-- P.S. SECTION -->
+        <tr>
+          <td style="padding:20px 45px 10px 45px;">
+            <p style="margin:0 0 12px 0; font-size:14px; line-height:1.4; text-align:center;">
+            </p>
+            <p style="margin:0 0 6px 0; font-size:13px; line-height:1.4; color:#777777; text-align:center;">
+              Better tools. Sharper output. Zero extra effort.
+            </p>
+            <p style="margin:0 0 20px 0; font-size:13px; line-height:1.4; color:#777777; text-align:center;">
+              More capability. Less friction. The results your team has been working toward.
+            </p>
+           </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+          <td id="email-footer-cell" class="footer" style="padding:25px; background-color:#F5F7FB; text-align:center; font-size:12px; color:#888888; border-top:1px solid #E5E7EB;">
+
+            <p>You're receiving this email because you subscribe to EmailFlow.</p>
+
+            <p>
+              <a href="https://emailflow.com" style="color:#6F42C1; text-decoration:underline;">https://emailflow.com</a>
+            </p>
+
+            <p>
+              <a href="mailto:support@emailflow.com" style="color:#6F42C1; text-decoration:underline;">
+                support@emailflow.com
+              </a>
+            </p>
+
+            <p>
+              <a href="https://emailflow.com/unsubscribe" style="color:#6F42C1; text-decoration:underline;">
+                Unsubscribe
+              </a>
+            </p>
+
+            <p>© 2026 EmailFlow. All rights reserved.</p>
+
+          </td>
+        </tr>
+
+       </table>
+
+     </td>
+   </tr>
+ </table>
+
+</center>
+
+</div>
+
+<script>
+function togglePreview() {
+  // grab all elements
+  var wrapper = document.getElementById('email-preview-wrapper');
+  var bgTable = document.getElementById('bg-table-1');
+  var bgTd = document.getElementById('bg-td-1');
+  var mainCard = document.getElementById('main-card');
+  var heading = document.getElementById('email-heading');
+  var footerCell = document.getElementById('email-footer-cell');
+  var textElements = document.querySelectorAll('.email-text');
+  var btn = document.getElementById('sim-btn');
+
+  // check current state: if mainCard background is light → switch to dark
+  var currentBg = mainCard.style.backgroundColor;
+  if (currentBg === '' || currentBg === 'rgb(255, 255, 255)' || currentBg === '#FFFFFF' || currentBg === '#ffffff') {
+    // ----- DARK MODE -----
+    wrapper.style.backgroundColor = '#1A1A1B';
+    bgTable.style.backgroundColor = '#1A1A1B';
+    bgTd.style.backgroundColor = '#1A1A1B';
+
+    mainCard.style.backgroundColor = '#1A1A1B';
+    mainCard.style.border = '1px solid #2A2A2A';
+    heading.style.color = '#A259FF';
+
+    textElements.forEach(function(el) {
+      el.style.color = '#E5E5E5';
+    });
+
+    footerCell.style.backgroundColor = '#161616';
+    footerCell.style.borderTop = '1px solid #2A2A2A';
+
+    btn.innerText = '☀️ Switch Back to Light Mode';
+    btn.style.backgroundColor = '#2d3748';
+    btn.classList.add('dark-active');
+  } else {
+    // ----- LIGHT MODE (revert) -----
+    wrapper.style.backgroundColor = '#F5F7FB';
+    bgTable.style.backgroundColor = '#F5F7FB';
+    bgTd.style.backgroundColor = '#F5F7FB';
+
+    mainCard.style.backgroundColor = '#FFFFFF';
+    mainCard.style.border = '1px solid #E5E7EB';
+    heading.style.color = '#6F42C1';
+
+    textElements.forEach(function(el) {
+      el.style.color = '#1A1A1A';
+    });
+
+    footerCell.style.backgroundColor = '#F5F7FB';
+    footerCell.style.borderTop = '1px solid #E5E7EB';
+
+    btn.innerText = '🌙 Simulate Email Client Dark Mode';
+    btn.style.backgroundColor = '#6F42C1';
+    btn.classList.remove('dark-active');
+  }
+}
+</script>
+
+</body>
+</html>
